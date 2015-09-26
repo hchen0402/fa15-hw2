@@ -1,11 +1,12 @@
 class PagesController < ApplicationController
   def home
-    # foo = Foobar.new "baz"
+    foo = Foobar.new "baz"
     # @baz = foo.bar :cat, sat: :dat, dat: :sat
   end
 
   def stringify
-    @text = "You are nothing!"
+    @nm = params[:name]
+    @obj = params[:adjective]
   end
 
   def age
