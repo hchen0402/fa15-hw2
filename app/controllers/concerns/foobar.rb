@@ -4,7 +4,7 @@ class Foobar
   	@nm = val
   end
 
-  def foo(name, options = {})
-  	
+  def bar(name, options = {})
+  	 @str = name.to_s << @nm << options[:sat].to_s
   end
 end
